@@ -3,9 +3,6 @@
   "functions": {
     "api/credit-application.js": {
       "maxDuration": 60
-    },
-    "api/credit-delivery-test.js": {
-      "maxDuration": 60
     }
   },
   "headers": [
