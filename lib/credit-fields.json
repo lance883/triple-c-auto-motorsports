@@ -1,0 +1,471 @@
+[
+  {
+    "name": "unit_year",
+    "label": "Year",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "unit_make",
+    "label": "Make",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "unit_model",
+    "label": "Model",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "unit_vin_stock_number",
+    "label": "VIN / stock number",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "unit_purchase_price",
+    "label": "Purchase price",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "unit_cash_down",
+    "label": "Cash down",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "unit_trade_allowance",
+    "label": "Trade allowance",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "unit_amount_requested",
+    "label": "Amount requested",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "applicant_full_legal_name",
+    "label": "Full legal name",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "applicant_date_of_birth",
+    "label": "Date of birth",
+    "type": "date",
+    "required": true
+  },
+  {
+    "name": "applicant_ssn",
+    "label": "SSN",
+    "type": "password",
+    "required": true
+  },
+  {
+    "name": "applicant_driver_s_license_number",
+    "label": "Driver\u2019s license number",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_license_state",
+    "label": "License state",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_mobile_phone",
+    "label": "Mobile phone",
+    "type": "tel",
+    "required": true
+  },
+  {
+    "name": "applicant_email",
+    "label": "Email",
+    "type": "email",
+    "required": true
+  },
+  {
+    "name": "applicant_street_address",
+    "label": "Street address",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "applicant_city",
+    "label": "City",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "applicant_state",
+    "label": "State",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "applicant_zip",
+    "label": "ZIP",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "applicant_years_months_at_address",
+    "label": "Years / months at address",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_monthly_housing_payment",
+    "label": "Monthly housing payment",
+    "type": "number",
+    "required": true
+  },
+  {
+    "name": "applicant_landlord_mortgage_company",
+    "label": "Landlord / mortgage company",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_residence",
+    "label": "Residence",
+    "type": "select",
+    "required": true
+  },
+  {
+    "name": "applicant_previous_address_if_less_than_2_years_at_current_address",
+    "label": "Previous address (if less than 2 years at current address)",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_time_at_previous_address",
+    "label": "Time at previous address",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_current_employer",
+    "label": "Current employer",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_occupation_position",
+    "label": "Occupation / position",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_employer_phone",
+    "label": "Employer phone",
+    "type": "tel",
+    "required": false
+  },
+  {
+    "name": "applicant_time_employed",
+    "label": "Time employed",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_gross_monthly_income",
+    "label": "Gross monthly income",
+    "type": "number",
+    "required": true
+  },
+  {
+    "name": "applicant_other_monthly_income",
+    "label": "Other monthly income",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "applicant_other_income_source",
+    "label": "Other income source",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_previous_employer_if_current_employment_is_less_than_2_years",
+    "label": "Previous employer (if current employment is less than 2 years)",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_previous_position",
+    "label": "Previous position",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_time_at_previous_employer",
+    "label": "Time at previous employer",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_bank_credit_union",
+    "label": "Bank / credit union",
+    "type": "text",
+    "required": false
+  },
+  {
+    "name": "applicant_monthly_auto_loan_payments",
+    "label": "Monthly auto / loan payments",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "applicant_other_monthly_debt_payments",
+    "label": "Other monthly debt payments",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "applicant_account_type",
+    "label": "Account type",
+    "type": "select",
+    "required": false
+  },
+  {
+    "name": "coapplicant_full_legal_name",
+    "label": "Full legal name",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_date_of_birth",
+    "label": "Date of birth",
+    "type": "date",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_ssn",
+    "label": "SSN",
+    "type": "password",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_driver_s_license_number",
+    "label": "Driver\u2019s license number",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_license_state",
+    "label": "License state",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_mobile_phone",
+    "label": "Mobile phone",
+    "type": "tel",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_email",
+    "label": "Email",
+    "type": "email",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_street_address",
+    "label": "Street address",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_city",
+    "label": "City",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_state",
+    "label": "State",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_zip",
+    "label": "ZIP",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_years_months_at_address",
+    "label": "Years / months at address",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_monthly_housing_payment",
+    "label": "Monthly housing payment",
+    "type": "number",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_landlord_mortgage_company",
+    "label": "Landlord / mortgage company",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_residence",
+    "label": "Residence",
+    "type": "select",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_current_employer",
+    "label": "Current employer",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_occupation_position",
+    "label": "Occupation / position",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_employer_phone",
+    "label": "Employer phone",
+    "type": "tel",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_time_employed",
+    "label": "Time employed",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_gross_monthly_income",
+    "label": "Gross monthly income",
+    "type": "number",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_other_monthly_income",
+    "label": "Other monthly income",
+    "type": "number",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_other_income_source",
+    "label": "Other income source",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_bank_credit_union",
+    "label": "Bank / credit union",
+    "type": "text",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_monthly_auto_loan_payments",
+    "label": "Monthly auto / loan payments",
+    "type": "number",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "coapplicant_other_monthly_debt_payments",
+    "label": "Other monthly debt payments",
+    "type": "number",
+    "required": false,
+    "joint": true
+  },
+  {
+    "name": "joint_intent",
+    "label": "We intend to apply for joint credit.",
+    "type": "checkbox",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "joint_applicant_initials",
+    "label": "Applicant initials",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "joint_co_applicant_initials",
+    "label": "Co-applicant initials",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "signature_applicant_printed_name",
+    "label": "Applicant printed name",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "signature_applicant_signature",
+    "label": "Applicant signature",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "signature_date",
+    "label": "Date",
+    "type": "date",
+    "required": true
+  },
+  {
+    "name": "signature_co_applicant_printed_name",
+    "label": "Co-applicant printed name",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "signature_co_applicant_signature",
+    "label": "Co-applicant signature",
+    "type": "text",
+    "required": true,
+    "joint": true
+  },
+  {
+    "name": "signature_co_applicant_date",
+    "label": "Co-applicant date",
+    "type": "date",
+    "required": true,
+    "joint": true
+  }
+]
