@@ -63,8 +63,10 @@ function handlerFactory(overrides={}) {
     const reference='TC-'+crypto.randomBytes(6).toString('hex').toUpperCase();
     used.set(token.id,{status:'pending',time:now,reference});
     let transport;
+    let phase = "PDF";
     try {
       const pdf=await (overrides.makePdf||makePdf)(values,reference,new Date(now).toISOString());
+      phase = "EMAIL";
       transport=(overrides.createTransport||nodemailer.createTransport)({
         host:'smtp.gmail.com', port:465, secure:true,
         auth:{user:env.GMAIL_USER,pass:password},
@@ -82,9 +84,10 @@ function handlerFactory(overrides={}) {
       if(!result.accepted?.some(address=>String(address).toLowerCase()===RECIPIENT)) throw new Error('NOT_ACCEPTED');
       used.set(token.id,{status:'sent',time:now,reference});
       return send(200,{reference});
-    } catch {
+    } catch (error) {
       // Never log request bodies, SMTP error payloads, names, SSNs, or credentials.
-      console.error('credit_application_delivery_unconfirmed');
+      const category = phase === 'PDF' ? 'PDF_GENERATION_FAILED' : ['EAUTH','ETIMEDOUT','ECONNECTION','ESOCKET','ENOENT'].includes(error.code) ? error.code : 'EMAIL_FAILED';
+      console.error('credit_application_delivery_unconfirmed', category);
       return send(502,{message:'We could not confirm delivery. Please call (870) 291-9233 before submitting again.'});
     } finally { transport?.close(); }
   };
