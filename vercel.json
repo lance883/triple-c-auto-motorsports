@@ -2,12 +2,10 @@
   "version": 2,
   "functions": {
     "api/credit-application.js": {
-      "maxDuration": 60,
-      "includeFiles": "node_modules/{pdfkit/js/data/**,@fontsource/noto-sans/files/noto-sans-latin-400-normal.woff}"
+      "maxDuration": 60
     },
     "api/credit-delivery-test.js": {
-      "maxDuration": 60,
-      "includeFiles": "node_modules/{pdfkit/js/data/**,@fontsource/noto-sans/files/noto-sans-latin-400-normal.woff}"
+      "maxDuration": 60
     }
   },
   "headers": [
